@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soundar Voice AI (Local)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            width: 450px;
+            padding: 25px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.35);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        #record {
+            margin-top: 25px;
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, #ff416c, #ff4b2b);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s ease;
+            box-shadow: 0 0 25px rgba(255, 89, 89, 0.7);
+        }
+
+        #record:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 35px rgba(255, 89, 89, 1);
+        }
+
+        #record:active {
+            transform: scale(0.95);
+        }
+
+        .bubble {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        #you {
+            background: rgba(0, 150, 255, 0.3);
+            text-align: left;
+        }
+
+        #bot {
+            background: rgba(0, 255, 100, 0.25);
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🎤 Soundar Voice AI</h2>
+    <p>Click the button and speak. The AI will respond instantly.</p>
+
+    <button id="record">🎙️ Record (4s)</button>
+
+<div style="margin-top:12px;">
+  <button id="pauseBtn" style="margin-right:8px;" disabled>⏸️ Pause</button>
+  <button id="resumeBtn" style="margin-right:8px;" disabled>▶️ Resume</button>
+  <button id="stopBtn" style="margin-right:8px;" disabled>⏹️ Stop</button>
+</div>
+
+<div id="you" class="bubble"><b>You:</b> —</div>
+<div id="bot" class="bubble"><b>Soundar:</b> —</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

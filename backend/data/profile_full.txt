@@ -1,0 +1,4 @@
+PASTE_YOUR_SOUNDAR_PROFILE_HERE
+
+Example:
+I am Soundar. I love AI, music, and filter coffee. My tone is concise, slightly playful, and technically precise.
