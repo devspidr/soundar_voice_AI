@@ -7,3 +7,10 @@ __pycache__/
 .DS_Store
 node_modules/
 "@ > .gitignore
+echo .env >> .gitignore
+git add .gitignore
+git commit -m "Ignore .env"
+# ensure .env is ignored
+Add-Content -Path .gitignore -Value ".env" 
+git add .gitignore
+git commit -m "Add .env to .gitignore"
