@@ -19,6 +19,8 @@ class ReasoningAgent:
             return
 
         api_key = os.getenv("OPENAI_API_KEY")
+        self.client = OpenAI(api_key=api_key)
+
         if not api_key:
             log.warning("OPENAI_API_KEY not set; LLM requests will fail without it.")
         try:

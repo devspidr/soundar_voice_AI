@@ -9,7 +9,8 @@ const resumeBtn = document.getElementById('resumeBtn');
 const stopBtn = document.getElementById('stopBtn');
 
 // Backend base URL
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = ""; // leave empty so fetch('/api/...') goes to the same origin on Vercel
+
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 if (!SpeechRecognition) {
